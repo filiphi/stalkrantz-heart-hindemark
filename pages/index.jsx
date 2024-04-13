@@ -6,11 +6,10 @@ import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
 import Translations from "./translations.json";
-import flower from "../public/flower.png";
-import mountain from "../public/mountain.JPG";
-import basque from "../public/basque.JPG";
-import wedding from "../public/wedding.JPEG";
-import party from "../public/party.JPEG";
+import flower from "../public/flower.webp";
+import mountain from "../public/mountain.webp";
+import wedding from "../public/wedding.webp";
+import party from "../public/party.webp";
 
 const dancing = Dancing_Script({
   weight: "400",
@@ -42,9 +41,10 @@ const Home = () => {
       </Head>
       <header>
         <nav className={"flex justify-center space-x-4"}>
-          <Link href="#landing">Home</Link> |{" "}
-          <Link href="#details">Details</Link> | <Link href="#faq">FAQ</Link> |{" "}
-          <Link href="#contact">Contact</Link>
+          <Link href="#landing"> {t["header-nav-landing"]}</Link> |
+          <Link href="#details"> {t["header-nav-details"]}</Link> |
+          <Link href="#faq">FAQ</Link>|
+          <Link href="#contact"> {t["header-nav-contact"]}</Link>
         </nav>
       </header>
 
@@ -62,9 +62,11 @@ const Home = () => {
                   {t["title"]}
                 </h1>
                 <p className={"mb-3"}>
-                  Sell event line 1<br />
-                  Sell event line 2<br />
-                  Sell event line 3
+                  {t["title-text-one"]}
+                  <br />
+                  {t["title-text-two"]}
+                  <br />
+                  {t["title-text-three"]}
                 </p>
               </div>
             </div>
@@ -97,18 +99,18 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2">
               <div className="bg-gray-200 mb-4 lg:mb-0">
-                <Image src={basque} alt="Basque" />
+                <Image src={mountain} alt="Hiking on a mountain in spain" />
               </div>
             </div>
             <div className="flex w-full lg:w-1/2 justify-center lg:pl-8">
               <div>
-                <h2 className="text-3xl font-bold mb-3">{"FAQ"}</h2>
-                <h4 className="mb-3">{"Question 1"}</h4>
-                <p className="mb-3">{"Answer"}</p>
-                <h4 className="mb-3">{"Question 2"}</h4>
-                <p className="mb-3">{"Answer"}</p>
-                <h4 className="mb-3">{"Question 3"}</h4>
-                <p className="mb-3">{"Answer"}</p>
+                <h2 className="text-3xl font-bold mb-3">{t["faq-title"]}</h2>
+                {t["faqs"].map((faq, index) => (
+                  <div key={index}>
+                    <h4 className="mb-3">{`Question ${index + 1}: ${faq.question}`}</h4>
+                    <p className="mb-3">{faq.answer}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -118,15 +120,15 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center">
             <div className="lg:w-1/2">
               <div className="bg-gray-200 mb-4 lg:mb-0">
-                <Image src={wedding} alt="Wedding" />
+                <Image src={wedding} alt="Picture from Wedding" />
               </div>
             </div>
             <div className="lg:w-1/2 lg:pr-8">
               <h2 className="text-3xl font-bold mb-3">{"contact"}</h2>
               <p className="mb-3">
-                {"email@email.com"}
+                {t["email"]}
                 <br />
-                {"Form to fill out: link"}
+                {t["form"]}
               </p>
             </div>
           </div>

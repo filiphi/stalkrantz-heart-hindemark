@@ -1,16 +1,46 @@
 {
   "en": {
+    "header-nav-landing": "Home",
+    "header-nav-details": "Contact",
+    "header-nav-contact": "Details",
     "title": "Marie & Filip",
+    "title-text-one": "Sell event line 1",
+    "title-text-two": "Sell event line 2",
+    "title-text-three": "Sell event line 3",
     "details": "Details",
     "address": "Address",
     "time": "Time",
-    "dressCode": "Dress Code"
+    "dressCode": "Dress Code",
+    "faq-title": "FAQ",
+    "faqs": [
+      {
+        "question": "question",
+        "answer": "answer"
+      }
+    ],
+    "email": "email@email.com",
+    "form": "Form to fill out: link"
   },
   "sv": {
+    "header-nav-landing": "Home",
+    "header-nav-details": "Contact",
+    "header-nav-contact": "Details",
     "title": "Marie & Filip",
+    "title-text-one": "Sell event line 1",
+    "title-text-two": "Sell event line 2",
+    "title-text-three": "Sell event line 3",
     "details": "Detaljer",
     "address": "Adress",
     "time": "Tid",
-    "dressCode": "Klädkod"
+    "dressCode": "Klädkod",
+    "faq-title": "FAQ",
+    "faqs": [
+      {
+        "question": "question",
+        "answer": "answer"
+      }
+    ],
+    "email": "email@email.com",
+    "form": "Form to fill out: link"
   }
 }
