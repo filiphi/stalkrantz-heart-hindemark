@@ -2,7 +2,10 @@
   "en": {
     "header-nav-landing": "Home",
     "header-nav-details": "Contact",
+    "header-nav-faq": "FAQ",
     "header-nav-contact": "Details",
+    "header-language-sv": "sv",
+    "header-language-en": "en",
     "title": "Marie & Filip",
     "title-text-one": "Sell event line 1",
     "title-text-two": "Sell event line 2",
@@ -24,7 +27,10 @@
   "sv": {
     "header-nav-landing": "Home",
     "header-nav-details": "Contact",
+    "header-nav-faq": "FAQ",
     "header-nav-contact": "Details",
+    "header-language-sv": "sv",
+    "header-language-en": "en",
     "title": "Marie & Filip",
     "title-text-one": "Sell event line 1",
     "title-text-two": "Sell event line 2",

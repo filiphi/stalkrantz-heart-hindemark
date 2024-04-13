@@ -43,7 +43,7 @@ const Home = () => {
         <nav className={"flex justify-center space-x-4"}>
           <Link href="#landing"> {t["header-nav-landing"]}</Link> |
           <Link href="#details"> {t["header-nav-details"]}</Link> |
-          <Link href="#faq">FAQ</Link>|
+          <Link href="#faq"> {t["header-nav-faq"]}</Link>|
           <Link href="#contact"> {t["header-nav-contact"]}</Link>
         </nav>
       </header>
