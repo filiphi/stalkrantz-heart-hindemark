@@ -18,7 +18,7 @@ const dancing = Dancing_Script({
   display: "swap",
 });
 
-const translationsForLanguage = () => {
+const useTranslationsForLanguage = () => {
   const searchParams = useSearchParams();
   let lang = searchParams.get("lang");
 
@@ -32,7 +32,7 @@ const translationsForLanguage = () => {
 // Single page website in sections.
 // Four section - Landing, Details, FAQ, Contact
 const Home = () => {
-  const t = translationsForLanguage();
+  const t = useTranslationsForLanguage();
   return (
     <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
       <Head>
