@@ -1,0 +1,16 @@
+{
+  "en": {
+    "title": "Marie & Filip",
+    "details": "Details",
+    "address": "Address",
+    "time": "Time",
+    "dressCode": "Dress Code"
+  },
+  "sv": {
+    "title": "Marie & Filip",
+    "details": "Detaljer",
+    "address": "Adress",
+    "time": "Tid",
+    "dressCode": "Klädkod"
+  }
+}
