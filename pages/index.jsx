@@ -43,29 +43,29 @@ const Home = () => {
       <header className={`fixed top-0 w-full bg-white z-10 ${styles.header}`}>
         <div className="pb-2">
           <nav className="flex justify-center space-x-4">
-            <Link href="#landing" className="hover:underline">
+            <Link href="#landing" className="p-2 hover:underline">
               {t["header-nav-landing"]}
             </Link>{" "}
-            <Link href="#details" className="hover:underline">
+            <Link href="#details" className="p-2 hover:underline">
               {t["header-nav-details"]}
             </Link>{" "}
-            <Link href="#faq" className="hover:underline">
+            <Link href="#faq" className="p-2 hover:underline">
               {t["header-nav-faq"]}
             </Link>{" "}
-            <Link href="#contact" className="hover:underline">
+            <Link href="#contact" className="p-2 hover:underline">
               {t["header-nav-contact"]}
             </Link>
-            <div className="">
+            <div className="p-2">
               <Link
                 href="?lang=sv"
-                className={`${lang === "sv" ? "font-bold" : ""} hover:underline`}
+                className={`${lang === "sv" ? "font-bold" : ""} p-2 hover:underline`}
               >
                 {t["header-language-sv"]}
               </Link>
               &nbsp;&nbsp;|&nbsp;&nbsp;
               <Link
                 href="?lang=en"
-                className={`"mx-0 ${lang === "en" ? "font-bold" : ""} hover:underline`}
+                className={`"mx-0 ${lang === "en" ? "font-bold" : ""} p-2 hover:underline`}
               >
                 {t["header-language-en"]}
               </Link>
@@ -76,7 +76,7 @@ const Home = () => {
 
       <main className={`${styles.main}`}>
         <section id="landing" className="text-center mb-8">
-          <div className={"flex flex-col lg:flex-row items-center mt-5"}>
+          <div className={"flex flex-col lg:flex-row items-center mt-12"}>
             <div className={"flex lg:w-1/2 justify-center"}>
               <div className={"mb-4 mg:mb-0"}>
                 <Image src={flower} alt="Flower" height={500} />
@@ -152,16 +152,19 @@ const Home = () => {
             <div className="lg:w-1/2 lg:pr-8">
               <h2 className="text-3xl font-bold mb-3">{t["contact"]}</h2>
               <p className="mb-3">
-                {t["email"]}
-                <br />
                 {t["form"]}
+                <br />
+                <Link
+                  className="underline underline-offset-4"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScozWOhyAPU-4Tygoq__bw3hfLUN3auKPG4xZ19L8qTpKTi9w/viewform?usp=sf_link"
+                >
+                  {t["form_name"]}
+                </Link>
               </p>
             </div>
           </div>
         </section>
       </main>
-
-      <footer>{"Footer"}</footer>
     </div>
   );
 };

@@ -7,22 +7,22 @@
     "header-language-sv": "sv",
     "header-language-en": "en",
     "title": "Marie & Filip",
-    "title-text-one": "Welcome to our celebration in the forest",
-    "title-text-two": "It will be magical",
-    "title-text-three": "sell line 3",
+    "title-text-one": "Welcome! We have waited many years for this",
+    "title-text-two": "Come join us for an evening to remember",
+    "title-text-three": "in our favorite location",
     "details": "Details",
+    "time": "Time: 17.00-02:00",
     "address": "Adress: Ältavägen 105, Nacka",
-    "time": "Time: 17.00",
     "dressCode": "Dress Code: Cocktail forest ",
     "faq-title": "FAQ",
     "faqs": [
       {
         "question": "When will you get married?",
-        "answer": "You will understand soon enough"
+        "answer": "You will know soon enough"
       },
       {
         "question": "Can we bring our kids?",
-        "answer": "Not this time, lets enjoy this evening"
+        "answer": "Not this time -we want to keep it as an adults-only celebration"
       },
       {
         "question": "How to get to the forest?",
@@ -30,33 +30,41 @@
       }
     ],
     "contact": "Contact!",
-    "email": "stalkrantz-hindemark@gmail.com",
-    "form": "Please send you allergies or dietary needs and favourite party song!"
+    "form": "Please fill out the form below so we can design the perfect evening for all of us!",
+    "form_name": "Form"
   },
   "sv": {
-    "header-nav-landing": "Home",
-    "header-nav-details": "Contact",
+    "header-nav-landing": "Hem",
+    "header-nav-details": "Detaljer",
     "header-nav-faq": "FAQ",
-    "header-nav-contact": "Details",
+    "header-nav-contact": "Kontakt",
     "header-language-sv": "sv",
     "header-language-en": "en",
     "title": "Marie & Filip",
-    "title-text-one": "Sell event line 1",
-    "title-text-two": "Sell event line 2",
-    "title-text-three": "Sell event line 3",
+    "title-text-one": "Välkommen! Vi har väntat många år på detta",
+    "title-text-two": "Kom och var med oss en kväll att minnas",
+    "title-text-three": "på vår favoritplats",
     "details": "Detaljer",
-    "address": "Adress",
-    "time": "Tid",
-    "dressCode": "Klädkod",
+    "time": "Tid: 17.00-02:00",
+    "address": "Adress: Ältavägen 105, Nacka",
+    "dressCode": "Klädkod: Cocktail skog",
     "faq-title": "FAQ",
     "faqs": [
       {
-        "question": "question",
-        "answer": "answer"
+        "question": "När ska ni gifta er?",
+        "answer": "Ni kommer att få veta det tillräckligt snart"
+      },
+      {
+        "question": "Kan vi ta med våra barn?",
+        "answer": "Inte den här gången - vi vill hålla det som en vuxenfest"
+      },
+      {
+        "question": "Hur tar man sig till skogen?",
+        "answer": "Du kan cykla, köra bil eller ta buss 401 till Älta. Om du åker bil och behöver parkering, kontakta oss i förväg"
       }
     ],
     "contact": "Kontakta oss!",
-    "email": "email@email.com",
-    "form": "Form to fill out: link"
+    "form": "Vänligen fyll i formuläret nedan så att vi kan planera den perfekta kvällen för oss alla!",
+    "form_name": "Formulär"
   }
 }
