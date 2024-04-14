@@ -7,22 +7,31 @@
     "header-language-sv": "sv",
     "header-language-en": "en",
     "title": "Marie & Filip",
-    "title-text-one": "Sell event line 1",
-    "title-text-two": "Sell event line 2",
-    "title-text-three": "Sell event line 3",
+    "title-text-one": "Welcome to our celebration in the forest",
+    "title-text-two": "It will be magical",
+    "title-text-three": "sell line 3",
     "details": "Details",
-    "address": "Address",
-    "time": "Time",
-    "dressCode": "Dress Code",
+    "address": "Adress: Ältavägen 105, Nacka",
+    "time": "Time: 17.00",
+    "dressCode": "Dress Code: Cocktail forest ",
     "faq-title": "FAQ",
     "faqs": [
       {
-        "question": "question",
-        "answer": "answer"
+        "question": "When will you get married?",
+        "answer": "You will understand soon enough"
+      },
+      {
+        "question": "Can we bring our kids?",
+        "answer": "Not this time, lets enjoy this evening"
+      },
+      {
+        "question": "How to get to the forest?",
+        "answer": "You can bike, drive or take bus 401 Älta. If you go by car and need parking reach out to us beforehand"
       }
     ],
-    "email": "email@email.com",
-    "form": "Form to fill out: link"
+    "contact": "Contact!",
+    "email": "stalkrantz-hindemark@gmail.com",
+    "form": "Please send you allergies or dietary needs and favourite party song!"
   },
   "sv": {
     "header-nav-landing": "Home",
@@ -46,6 +55,7 @@
         "answer": "answer"
       }
     ],
+    "contact": "Kontakta oss!",
     "email": "email@email.com",
     "form": "Form to fill out: link"
   }

@@ -17,7 +17,7 @@ const dancing = Dancing_Script({
   display: "swap",
 });
 
-const useTranslationsForLanguage = () => {
+const useLanguage = () => {
   const searchParams = useSearchParams();
   let lang = searchParams.get("lang");
 
@@ -25,13 +25,14 @@ const useTranslationsForLanguage = () => {
     lang = "sv";
   }
 
-  return Translations[lang];
+  return lang;
 };
 
 // Single page website in sections.
 // Four section - Landing, Details, FAQ, Contact
 const Home = () => {
-  const t = useTranslationsForLanguage();
+  const lang = useLanguage();
+  const t = Translations[lang];
   return (
     <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
       <Head>
@@ -39,18 +40,43 @@ const Home = () => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header>
-        <nav className={"flex justify-center space-x-4"}>
-          <Link href="#landing"> {t["header-nav-landing"]}</Link> |
-          <Link href="#details"> {t["header-nav-details"]}</Link> |
-          <Link href="#faq"> {t["header-nav-faq"]}</Link>|
-          <Link href="#contact"> {t["header-nav-contact"]}</Link>
-        </nav>
+      <header className={`fixed top-0 w-full bg-white z-10 ${styles.header}`}>
+        <div className="pb-2">
+          <nav className="flex justify-center space-x-4">
+            <Link href="#landing" className="hover:underline">
+              {t["header-nav-landing"]}
+            </Link>{" "}
+            <Link href="#details" className="hover:underline">
+              {t["header-nav-details"]}
+            </Link>{" "}
+            <Link href="#faq" className="hover:underline">
+              {t["header-nav-faq"]}
+            </Link>{" "}
+            <Link href="#contact" className="hover:underline">
+              {t["header-nav-contact"]}
+            </Link>
+            <div className="">
+              <Link
+                href="?lang=sv"
+                className={`${lang === "sv" ? "font-bold" : ""} hover:underline`}
+              >
+                {t["header-language-sv"]}
+              </Link>
+              &nbsp;&nbsp;|&nbsp;&nbsp;
+              <Link
+                href="?lang=en"
+                className={`"mx-0 ${lang === "en" ? "font-bold" : ""} hover:underline`}
+              >
+                {t["header-language-en"]}
+              </Link>
+            </div>
+          </nav>
+        </div>
       </header>
 
-      <main className={styles.main}>
+      <main className={`${styles.main}`}>
         <section id="landing" className="text-center mb-8">
-          <div className={"flex flex-col lg:flex-row items-center"}>
+          <div className={"flex flex-col lg:flex-row items-center mt-5"}>
             <div className={"flex lg:w-1/2 justify-center"}>
               <div className={"mb-4 mg:mb-0"}>
                 <Image src={flower} alt="Flower" height={500} />
@@ -107,7 +133,7 @@ const Home = () => {
                 <h2 className="text-3xl font-bold mb-3">{t["faq-title"]}</h2>
                 {t["faqs"].map((faq, index) => (
                   <div key={index}>
-                    <h4 className="mb-3">{`Question ${index + 1}: ${faq.question}`}</h4>
+                    <h4 className="mb-0 font-bold">{faq.question}</h4>
                     <p className="mb-3">{faq.answer}</p>
                   </div>
                 ))}
@@ -124,7 +150,7 @@ const Home = () => {
               </div>
             </div>
             <div className="lg:w-1/2 lg:pr-8">
-              <h2 className="text-3xl font-bold mb-3">{"contact"}</h2>
+              <h2 className="text-3xl font-bold mb-3">{t["contact"]}</h2>
               <p className="mb-3">
                 {t["email"]}
                 <br />
