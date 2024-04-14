@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
       <Head>
-        <title>{"Title"}</title>
+        <title>{"Marie <3 Filip"}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
