@@ -40,9 +40,11 @@ const Home = () => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header className={`fixed top-0 w-full bg-white z-10 ${styles.header}`}>
+      <header
+        className={`px-4 fixed top-0 w-full bg-white z-10 ${styles.header}`}
+      >
         <div className="pb-2">
-          <nav className="flex justify-center space-x-4">
+          <nav className="flex justify-center space-x-0 md:space-x-4">
             <Link href="#landing" className="p-2 hover:underline">
               {t["header-nav-landing"]}
             </Link>{" "}
